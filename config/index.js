@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'fed-taro-demo',
+  projectName: 'fed-taro-init',
   date: '2019-9-20',
   designWidth: 750,
   deviceRatio: {
@@ -8,7 +8,7 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: {
     babel: {
       sourceMap: true,

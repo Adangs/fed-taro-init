@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "fed-taro-demo",
+  "projectname": "fed-taro-init",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wxf2769590fbe768c7",
   "setting": {
     "urlCheck": true,
     "es6": false,
