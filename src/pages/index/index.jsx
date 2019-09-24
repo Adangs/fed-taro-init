@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
+import XRequset from '../../utils/x-request'
 import './index.less'
 
 export default class Index extends Component {
@@ -11,7 +12,13 @@ export default class Index extends Component {
 
   componentWillMount () { }
 
-  componentDidMount () { }
+  componentDidMount () {
+    XRequset({
+      url: '/mc/home/index'
+    }).then(res => {
+      console.log(res)
+    })
+  }
 
   componentWillUnmount () { }
 
