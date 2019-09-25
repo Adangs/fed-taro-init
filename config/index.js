@@ -28,6 +28,7 @@ const config = {
   },
   copy: {
     patterns: [
+      { from: 'src/images/logo.png', to: 'dist/quickapp/src/images/logo.png' }
     ],
     options: {
     }
