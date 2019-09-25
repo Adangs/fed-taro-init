@@ -1,6 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import XRequset from '../../utils/x-request'
 import './index.less'
 
 export default class Index extends Component {
@@ -11,13 +10,7 @@ export default class Index extends Component {
 
   componentWillMount () { }
 
-  componentDidMount () {
-    XRequset({
-      url: '/mc/home/index'
-    }).then(res => {
-      console.log(res)
-    })
-  }
+  componentDidMount () {}
 
   componentWillUnmount () { }
 
@@ -27,7 +20,7 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View>Hello world!</View>
+      <View>别人的世界</View>
     )
   }
 }
