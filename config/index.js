@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'fed-taro-init',
   date: '2019-9-20',
@@ -25,6 +26,9 @@ const config = {
     }
   },
   defineConstants: {
+  },
+  alias: {
+    '@/src': path.resolve(__dirname, '..', 'src')
   },
   copy: {
     patterns: [
